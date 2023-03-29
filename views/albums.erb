@@ -1,0 +1,14 @@
+<!-- GET /albums -->
+
+<html>
+  <head></head>
+  <body>
+    <h1>Albums</h1>
+    <% @albums.each do |album| %>
+      <div>
+        <a href="albums/<%= album.id %>"><%= album.title %></a></br>
+      </div>
+    <% end %>
+    </br></br><a href="/">Home</a>
+  </body>
+</html>
